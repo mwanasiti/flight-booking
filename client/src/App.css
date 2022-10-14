@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+h1 {
+  margin-top: 30px;
+  position: relative;
+  color: hsl(0, 3%, 7%);
+  font-weight: bold;
+  font-family: "Anonymous Pro", monospace;
+  letter-spacing: 7px;
+  overflow: hidden;
+  border-right: 2px solid hsl(0, 0%, 80%);
+  white-space: nowrap;
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms infinite;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 710px;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: aliceblue;
+  }
+  to {
+    border-right-color: aliceblue;
+  }
+}
+

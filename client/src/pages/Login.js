@@ -7,7 +7,9 @@ const Login = ({onLogin}) => {
 
   return (
     <>
-        
+    <div>
+      <div>  
+        </div>    
         {showLogin ? (
 
         <div style={{textAlign: "center"}}>
@@ -19,7 +21,7 @@ const Login = ({onLogin}) => {
           <br />
           <br />
           <br />
-          <p>
+          <p style={{marginRight:'600px', marginTop:'-50px'}}>
             Don't have an account? &nbsp;
             <button type="button" class="btn btn-primary" onClick={() => setShowLogin(false)}>
               Sign Up
@@ -34,7 +36,7 @@ const Login = ({onLogin}) => {
           </div>
           <SignUpForm onLogin={onLogin} />
           <br />
-          <p>
+          <p >
             Already have an account? &nbsp;
             <button type="button" class="btn btn-primary" onClick={() => setShowLogin(true)}>
               Log In
@@ -43,6 +45,11 @@ const Login = ({onLogin}) => {
         </div>
         </>
       )}
+      <div
+  className="bg-image"
+  style={{backgroundImage: "url('https://media.istockphoto.com/photos/airplane-wing-in-the-sky-on-a-sunset-picture-id1310347034?b=1&k=20&m=1310347034&s=170667a&w=0&h=nE1G2vJAfkniV5_4OxAq8E3hXEe3XLfq6W9ezZLCIsY=')", 
+  height: '50vh'}}></div>
+      </div> 
     </>
   )
 }

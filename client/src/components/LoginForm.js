@@ -27,10 +27,11 @@ const LoginForm = ({onLogin}) => {
 
   return (
     <>
-    <div style={{width: "50%", display: "inline-flex", justifyContent: "center"}}>
+    <div style={{width: "30%", backgroundColor:'#000000', color:'#ffffff', marginLeft:'150px'}} className='card'>
+      <div className='card-body'>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
-          <label for="username" className="form-label">Username</label>
+          <label style={{color:'#ffffff', marginRight:'5px', fontFamily:'inherit', fontSize:'20px'}} for="username" className="form-label">Username : </label>
           <input 
           type="text"
           id="username"
@@ -41,7 +42,7 @@ const LoginForm = ({onLogin}) => {
           <div id="username" className="form-text">Input a unique username.</div>
         </div>
         <div className="mb-3">
-          <label for="password" className="form-label">Password</label>
+          <label style={{color:'#ffffff', marginRight:'5px', fontFamily:'inherit', fontSize:'20px'}} for="password" className="form-label">Password : </label>
           <input type="password"
           id="password"
           autoComplete="current-password"
@@ -49,7 +50,7 @@ const LoginForm = ({onLogin}) => {
           onChange={(e) => setPassword(e.target.value)}/>
         </div>
         <div style={{textAlign: "center"}}>
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-dark">
             {isLoading ? "Loading..." : "Login"}
           </button>
         </div>
@@ -60,6 +61,7 @@ const LoginForm = ({onLogin}) => {
                 </div>
         })}
       </form>
+      </div>
     </div>
     </>
   )
