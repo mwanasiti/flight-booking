@@ -9,7 +9,7 @@ const LoginForm = ({onLogin}) => {
   function handleSubmit(e) {
     e.preventDefault();
     setIsLoading(true);
-    fetch("/login", {
+    fetch("/api/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -38,7 +38,7 @@ const LoginForm = ({onLogin}) => {
           value={username}
           onChange={(e) => setUsername(e.target.value)}
           />
-          <div id="emailHelp" className="form-text">Input a unique username.</div>
+          <div id="username" className="form-text">Input a unique username.</div>
         </div>
         <div className="mb-3">
           <label for="password" className="form-label">Password</label>

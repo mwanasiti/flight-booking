@@ -7,11 +7,14 @@ const Login = ({onLogin}) => {
 
   return (
     <>
-        <div style={{textAlign: "center"}}>
-            <h1 class="display-1">Login</h1>
-        </div>
+        
         {showLogin ? (
+
         <div style={{textAlign: "center"}}>
+          <div style={{textAlign: "center"}}>
+            <h1 class="display-1">Login</h1>
+          </div>
+          <br />
           <LoginForm onLogin={onLogin} />
           <br />
           <br />
@@ -26,6 +29,9 @@ const Login = ({onLogin}) => {
       ) : (
         <>
         <div style={{textAlign: "center"}}>
+          <div style={{textAlign: "center"}}>
+              <h1 class="display-1">Sign Up</h1>
+          </div>
           <SignUpForm onLogin={onLogin} />
           <br />
           <p>

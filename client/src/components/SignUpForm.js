@@ -11,7 +11,7 @@ const SignUpForm = ({onLogin}) => {
     e.preventDefault();
     setErrors([]);
     setIsLoading(true);
-    fetch("/signup", {
+    fetch("/api/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -68,7 +68,7 @@ const SignUpForm = ({onLogin}) => {
           </button>
         </div>
         
-        {errors.map((err) => {
+        {errors?.map((err) => {
           return <div key={err}>
                     <li>{err}</li>
                 </div>
