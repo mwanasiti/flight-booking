@@ -40,7 +40,7 @@ const Login = ({onLogin}) => {
             Already have an account? &nbsp;
             <button type="button" class="btn btn-primary" onClick={() => setShowLogin(true)}>
               Log In
-            </button>mmari
+            </button>mmaria
           </p>
         </div>
         </>
