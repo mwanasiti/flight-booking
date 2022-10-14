@@ -33,9 +33,6 @@ const Navbar = ({setUser}) => {
           <Link className="nav-link" to="/flights">Available flights</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/booking">Booking</Link>
-        </li>
-        <li className="nav-item">
           <Link className="nav-link" to="/bookinginfo">Update your details</Link>
         </li>
         {/* <li className="nav-item">
