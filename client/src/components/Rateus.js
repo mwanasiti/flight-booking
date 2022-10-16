@@ -54,7 +54,6 @@ function Rateus({ user }) {
         const destroyIt = allFeedback.filter((review) => review.id !== id)
             setAllFeedback(destroyIt)
         })
-        window.location.reload()
   }
 
   const onChange=(e)=>{
