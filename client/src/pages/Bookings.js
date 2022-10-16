@@ -99,7 +99,7 @@ const Bookings = ({user}) => {
     <button type='submit' class="btn btn-primary btn-block mb-4" onClick={handleSubmit}>Update Profile
     </button>
 
-    <button class="btn btn-primary btn-block mb-4" onClick={()=>{
+    <button class="btn btn-dark btn-block mb-4" onClick={()=>{
     navigation('/payment')
     }}>PROCEED TO PAYMENT</button>
 
