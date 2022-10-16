@@ -109,7 +109,7 @@ function Rateus({ user }) {
                         </div>
                         <h3>Name: {feedback?.name}</h3>
                         <div>
-                          Rating: {" "},
+                          Rating: {" "}
                           <StarRating percentage={feedback.rating / 5} />
                         </div>
                         <p>Reason: {feedback?.reason}</p>
