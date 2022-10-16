@@ -30,7 +30,7 @@ const Flights = () => {
                 return (
                     <div key={flight.id}>
                         <table class="table">
-                            <thead>
+                            <thead style={{fontWeight:'bolder', fontSize:'20px'}}>
                                 <tr>
                                 <th scope="col">Flight Id</th>
                                 <th scope="col"></th>
@@ -38,7 +38,7 @@ const Flights = () => {
                                 <th scope="col">to</th>
                                 <th scope="col">From</th>
                                 <th scope="col">Seats</th>
-                                <th scope="col">Cost in $</th>
+                                <th scope="col">Cost $</th>
                                 <th scope="col">Flight Date</th>
                                 <th scope="col">Booking</th>
                                 </tr>
@@ -46,7 +46,16 @@ const Flights = () => {
                             <tbody>
                                 <tr>
                                 <td>{flight.id}</td>
-                                <td>{<img style={{borderRadius:'80%'}} class="img-fluid rounded-pill" src={flight.airline_image} className="rounded mx-auto d-block" alt={flight.airline} />}</td>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <img
+                                            src={flight.airline_image}
+                                            alt={flight.airline}
+                                            style={{width: 150, height:50}}
+                                            
+                                        />
+                                    </div>
+                                </td>
                                 <td>{flight.airline}</td>
                                 <td>{flight.to}</td>
                                 <td>{flight.from}</td>

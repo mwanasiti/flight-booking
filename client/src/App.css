@@ -1,41 +1,14 @@
-.App {
-  text-align: center;
+body{
+  background-color: #fff;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --main-bg-color: rgb(26, 25, 25);
+  --main-font-color: rgb(0, 0, 0);
+  --theme-primary: rgb(254, 202, 27);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
@@ -70,3 +43,26 @@ h1 {
   }
 }
 
+.checked {
+  color: orange;
+}
+
+.star-rating {
+  color: rgba(0, 0, 0, 0.1);
+  font-size: 1.5rem;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.star-rating .foreground {
+  color: var(--theme-primary);
+  position: absolute;
+  display: flex;
+  overflow: hidden;
+}
+
+.star-rating .background {
+  display: flex;
+  color:hsl(0, 3%, 22%)
+}

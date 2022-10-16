@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_10_13_213131) do
+ActiveRecord::Schema[7.0].define(version: 2022_10_15_212156) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -47,6 +47,17 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_13_213131) do
     t.index ["user_id"], name: "index_user_profiles_on_user_id"
   end
 
+  create_table "user_ratings", force: :cascade do |t|
+    t.string "image"
+    t.string "name"
+    t.float "rating"
+    t.string "reason"
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_user_ratings_on_user_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "username"
     t.string "password_digest"
@@ -57,4 +68,5 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_13_213131) do
   add_foreign_key "user_flights", "flights"
   add_foreign_key "user_flights", "users"
   add_foreign_key "user_profiles", "users"
+  add_foreign_key "user_ratings", "users"
 end

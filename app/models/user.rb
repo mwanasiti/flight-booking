@@ -6,4 +6,5 @@ class User < ApplicationRecord
     has_one :user_profile, dependent: :destroy
     has_many :user_flights
     has_many :flights, through: :user_flights
+    has_many :user_ratings
 end
