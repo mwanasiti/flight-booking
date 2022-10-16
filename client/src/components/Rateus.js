@@ -12,10 +12,15 @@ function Rateus({ user }) {
       user_id: user.id     
     });
 
+    const [isLoading, setIsLoading] = useState(true);
+
     useEffect(() => {
       fetch("/api/user_ratings")
       .then(r => r.json())
-      .then(data => setAllFeedback(data))
+      .then(data => {
+        setAllFeedback(data)
+        setIsLoading(false)
+      })
   }, [])
 
   function handleSubmit(e){
@@ -61,6 +66,8 @@ function Rateus({ user }) {
       [name]:value
     });
   }
+
+  if(isLoading === true) return <p>Loading...</p>;
 
   return (
     <div>
