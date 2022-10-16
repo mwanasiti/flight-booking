@@ -108,7 +108,7 @@ function Rateus({ user }) {
             <div >
         {allFeedback.map((feedback) => {
             return (
-                <div style={{ display: "inline-flex", justifyContent: "center", overflowX: "auto" }} key={feedback.id} className="card feedback-card col-md-5">
+                <div style={{ display: "inline-flex", justifyContent: "center", overflowX: "auto" }} key={feedback?.id} className="card feedback-card col-md-5">
                     <div class="card-body" style={{backgroundColor: 'aliceblue'}}>
                         <blockquote class="blockquote mb-0">
                         <div className="card h-100" style={{display: "inline-flex", justifyContent: "center", alignItems: "center"}}>
@@ -117,19 +117,19 @@ function Rateus({ user }) {
                         <h3>Name: {feedback?.name}</h3>
                         <div>
                           Rating: {" "}
-                          <StarRating percentage={feedback.rating / 5} />
+                          <StarRating percentage={feedback?.rating / 5} />
                         </div>
                         <p>Reason: {feedback?.reason}</p>
-                        {user.id === feedback.user_id ?
+                        {user.id === feedback?.user_id ?
                         (
                           <button 
                         type="button" 
                         className="btn btn-primary" data-mdb-ripple-color="dark"
-                        onClick={() => deleteReview(feedback.id)}>Delete
+                        onClick={() => deleteReview(feedback?.id)}>Delete
                         </button>
                         ):(
                           <>
-                            ~ {feedback.name}
+                            ~ {feedback?.name}
                           </>
                         )
                         }
