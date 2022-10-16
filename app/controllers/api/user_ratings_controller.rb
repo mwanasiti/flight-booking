@@ -25,7 +25,7 @@ class Api::UserRatingsController < ApplicationController
     def destroy
         rating = find_rating
         rating.destroy
-        head :no_content,
+        head :no_content
     end
 
     private

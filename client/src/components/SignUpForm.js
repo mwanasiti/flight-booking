@@ -35,35 +35,38 @@ const SignUpForm = ({onLogin}) => {
     <>
       <div style={{width: "50%", display: "inline-flex", justifyContent: "center"}}>
       <form onSubmit={handleSubmit}>
-        <div className="mb-3">
-          <label for="username" className="form-label">Username</label>
+        <div className="form mb-4">
+        <label class="form-label" for="form1Example1">Username</label>
           <input 
           type="text"
-          id="username"
+          id="form1Example1"
+          className='form-control'
           autoComplete="off"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
           />
-          <div id="username" className="form-text">Input a unique username.</div>
+          {/* <div id="username" className="form-text">Input a unique username.</div> */}
         </div>
-        <div className="mb-3">
+        <div className="form mb-4">
           <label for="password" className="form-label">Password</label>
           <input type="password"
-          id="password"
+          id="form1Example2"
+          className='form-control'
           autoComplete="current-password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}/>
         </div>
-        <div className="mb-3">
+        <div className="form mb-4">
           <label for="passwordC" className="form-label">Password Confirmation</label>
           <input type="password"
-          id="password_confirmation"
+          id="form1Example3"
+          className='form-control'
           autoComplete="current-password"
           value={passwordConfirmation}
           onChange={(e) => setPasswordConfirmation(e.target.value)}/>
         </div>
         <div style={{textAlign: "center"}}>
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-dark">
           {isLoading ? "Loading..." : "Sign Up"}
           </button>
         </div>

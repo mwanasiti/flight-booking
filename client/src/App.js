@@ -30,7 +30,7 @@ function App() {
           <Route path='/' element={<HomePage />} />
           <Route path='/flights' element={<Flights />} />
           <Route path='/payment' element={<Payment />} />
-          <Route path='/bookings/:id' element={<Bookings />} />
+          <Route path='/bookings/:id' element={<Bookings user={user}/>} />
           <Route path='/rateus' element={<Rateus user={user}/>} />
         </Routes>
       </main>

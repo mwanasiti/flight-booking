@@ -35,7 +35,7 @@ const Flights = () => {
                                 <th scope="col">Flight Id</th>
                                 <th scope="col"></th>
                                 <th scope="col">Airline</th>
-                                <th scope="col">to</th>
+                                <th scope="col">To</th>
                                 <th scope="col">From</th>
                                 <th scope="col">Seats</th>
                                 <th scope="col">Cost $</th>

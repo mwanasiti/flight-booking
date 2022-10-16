@@ -14,14 +14,14 @@ const Login = ({onLogin}) => {
 
         <div style={{textAlign: "center"}}>
           <div style={{textAlign: "center"}}>
-            <h1 class="display-1">Login</h1>
+            <h2 style={{marginRight:'100px', fontWeight:'bolder', fontFamily:'inherit', color:'#000'}} class="display-1">Login</h2>
           </div>
           <br />
           <LoginForm onLogin={onLogin} />
           <br />
           <br />
           <br />
-          <p style={{marginRight:'600px', marginTop:'-50px'}}>
+          <p style={{marginRight:'100px', marginTop:'-50px'}}>
             Don't have an account? &nbsp;
             <button type="button" class="btn btn-primary" onClick={() => setShowLogin(false)}>
               Sign Up
@@ -32,11 +32,11 @@ const Login = ({onLogin}) => {
         <>
         <div style={{textAlign: "center"}}>
           <div style={{textAlign: "center"}}>
-              <h1 class="display-1">Sign Up</h1>
+              <h2 style={{marginRight:'0px', fontWeight:'bolder', fontFamily:'inherit', color:'#000'}}  class="display-1">Sign Up</h2>
           </div>
           <SignUpForm onLogin={onLogin} />
           <br />
-          <p >
+          <p style={{marginTop:'30px'}}>
             Already have an account? &nbsp;
             <button type="button" class="btn btn-primary" onClick={() => setShowLogin(true)}>
               Log In

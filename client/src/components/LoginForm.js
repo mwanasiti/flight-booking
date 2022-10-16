@@ -27,7 +27,7 @@ const LoginForm = ({onLogin}) => {
 
   return (
     <>
-    <div style={{width: "30%", backgroundColor:'#000000', color:'#ffffff', marginLeft:'150px'}} className='card'>
+    <div style={{width: "30%", backgroundColor:'#000000', color:'#ffffff', marginLeft:'420px'}} className='card'>
       <div className='card-body'>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
