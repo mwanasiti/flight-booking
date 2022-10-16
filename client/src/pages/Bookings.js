@@ -96,7 +96,7 @@ const Bookings = ({user}) => {
   <label class="form-check-label" for="inlineRadio2">Male</label>
 </div>
 
-    <button type='submit' class="btn btn-primary btn-block mb-4" onClick={handleSubmit}>Submit
+    <button type='submit' class="btn btn-primary btn-block mb-4" onClick={handleSubmit}>Update Profile
     </button>
 
     <button class="btn btn-primary btn-block mb-4" onClick={()=>{
