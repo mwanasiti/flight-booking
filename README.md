@@ -34,7 +34,12 @@ You no longer have to visit a travel agent as you can book a flight at the comfo
 Maximised efficiency:
 Ease of booking and way lesser time consumption increase efficiency and effectiveness.
 
-
+## User Story.
+When one logs in/signs in, they are redirected to the home page.
+After which they they can navigate to Available Flights from which they can select any available flight(book now).
+By pressing the 'book now' button, they are then redirected to the Update/Booking Details page where they can UPDATE their details/User Profile for booking purposes. NB:All details added or updated are sent to the backend(This can be checked/confirmed in the console by inspecting).
+Thereafter, within the same page, there's a 'proceed to payment' button that redirects one to the Payment segment/page. This iniates a prompt message that indicates 'payment has been made and data has been recorded'.
+Lastly, one can navigate to the Rate Us page where they can give ratings on the app. This is the other segment where CRUD has been employed: A user can create(add their details), Read and Delete.
 ## Link to live site
 https://shrouded-beyond-01553.herokuapp.com/
 
