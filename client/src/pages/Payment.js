@@ -2,7 +2,7 @@ import React from 'react'
 
 function Payment() {
   return (
-    <div>
+    <div>,
         <div>
         <form style={{marginTop:'50px', marginLeft:'400px', marginRight:'400px'}}>
             <div>
