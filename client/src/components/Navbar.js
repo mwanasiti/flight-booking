@@ -33,7 +33,7 @@ const Navbar = ({setUser}) => {
           <Link className="nav-link" to="/flights">Available flights</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/bookings/:id">Booking</Link>
+          <Link className="nav-link" to="/bookings/:id">Booking/Update Details</Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link" to="/payment">Proceed to payment</Link>

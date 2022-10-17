@@ -47,7 +47,7 @@ function Payment() {
   
 
   
-  <button type="submit" style={{}} className="btn btn-dark btn-block mb-4">PAY</button>
+  <button onClick={()=>{ alert('Your payment has been recorded'); }} type="submit" style={{}} className="btn btn-dark btn-block mb-4">PAY</button>
 </form>
         </div>
 
