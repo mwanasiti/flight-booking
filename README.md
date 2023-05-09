@@ -10,7 +10,7 @@ Implement authentication/authorization. At a minimum, a user should be able to l
 
 
 ## Project Name
-Flight Bars
+Flight Booking system
 
 ## Author
 Ali Mariam
